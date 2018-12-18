@@ -29,7 +29,15 @@
          <li>Gradient Descent Method</li>
          <li>Optimization</li>
           </ol>
-   
+    <li>Validation</li>
+  <ol>
+  <li>Train_Test_Split</li>
+   <li>k-fold</li>
+    <li>Accuracy</li>
+   </ol>
+  <li>Result</li>
+ <li>Future Work</li>
+</ol>
    
  <h2>Introduction</h2> 
       <h3>About EDM Process<h3>
@@ -49,13 +57,5 @@ Saved the cost of ANSYS and skilled worker
    
          
  
-  <li>Validation</li>
-  <ol>
-  <li>Train_Test_Split</li>
-   <li>k-fold</li>
-    <li>Accuracy</li>
-   </ol>
-  <li>Result</li>
- <li>Future Work</li>
-</ol>
+ 
 
