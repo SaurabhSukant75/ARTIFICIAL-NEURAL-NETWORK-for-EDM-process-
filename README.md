@@ -41,17 +41,29 @@
    
  <h2>Introduction</h2> 
       <h3>About EDM Process<h3>
-     <p>https://en.wikipedia.org/wiki/Electrical_discharge_machining#Die-sink_EDM</p>
+   <p>The present manufacturing environment is characterized by complexity, interdisciplinary
+manufacturing functions and an ever growing demand for new tools and
+techniques to solve difficult problems. </p>
+   <p>The electrical discharge machining (EDM) process is the most popular among the non-conventional machining
+processes. The erosion process of EDM is that the discharge sparks in gap generate enough heat to melt and even
+vaporize some of the material on the surface of workpiece, so any difficult-to-cut material can be cut in EDM as
+long as the material can conduct electricity.</p>
+     <p>for more about EDM-click on link:-https://en.wikipedia.org/wiki/Electrical_discharge_machining#Die-sink_EDM</p>
    <h3>Why ANN Model</h3>
-   <p>If we want to find output(MRR , Crater Depth) at particular  input  (voltage, current , Ton , Toff )  then we have to do  simulation in ANSYS, which will take:
-More time 
-Need a  very good  skilled worker for ANSYS 
+   <p> <b>The complex nature of the process involves simultaneous
+interaction of thermal, mechanical, chemical and electrical phenomena, which makes process model very difficult.so,A neural network is used to capture the general relationship between variables of a system that are difficult to relate analytically.<b>
 </p>
    <p>But , we can map input vector([voltage , current, ton, toff ])  to output vector ([MRR,CD])   by using nonlinear statistical data modelling tools like Machine Learning , Deep Learning.
 </p>
-   <h3>Advantage of ANN model</h3><p>Very  less  time
-No need of  good skilled worker 
-Saved the cost of ANSYS and skilled worker
+   <h3>Advantage of ANN model</h3>
+      <p>If we want to find output parameter at particular(MRR,Crater depth)  input  parameter (voltage, current , Ton , Toff ) by <b>Finite Element Method<b>  then we have to do  simulation again & again in ANSYS, which will take:
+</p>
+        <ol> <li>More time</li>
+           <li>Need a  very good  skilled worker for ANSYS SOFTWARE</li> <ol>
+  <P>But by using Artificial Nural Netwok we can save </P>   
+         <ol><li>Time</li><li>Need of  good skilled worker </li><li>Cost of ANSYS SOFTWARE and skilled worker</li></ol>
+
+
 </p>
    
    
