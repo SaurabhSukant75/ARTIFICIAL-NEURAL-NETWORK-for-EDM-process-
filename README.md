@@ -1,4 +1,4 @@
-#Thermo physical modeling of electric discharge  machining process by using Artiﬁcial Neural  Network.
+<h>Project Title:-Thermo physical modeling of electric discharge  machining process by using Artiﬁcial Neural  Network.</h>
 <p><b>  Table of Contents: </b></p>
 
 
@@ -25,16 +25,24 @@
   <li>Artificial Neural Network :</li>
             <ol>
          <li>How to choose Algorithm</li>
-         <li>Back Propagation Algoritham</li>
-         
-         <li>Architecture of Neural Net</li>
+         <li>Back Propagation Algoritham</li>        <li>Architecture of Neural Net</li>
          <li>Gradient Descent Method</li>
          <li>Optimization</li>
           </ol>
+   
+   
+   
+   
+   
+   
+         
+ 
   <li>Validation</li>
+  <ol>
   <li>Train_Test_Split</li>
    <li>k-fold</li>
     <li>Accuracy</li>
+   </ol>
   <li>Result</li>
  <li>Future Work</li>
 </ol>
