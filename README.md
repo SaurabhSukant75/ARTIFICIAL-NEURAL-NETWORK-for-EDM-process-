@@ -22,21 +22,7 @@
          <li>Features</li>
          <li>Normalization</li>
           </ol>
-  <li>Artificial Neural Network :</li>
-            <ol>
-         <li>How to choose Algorithm</li>
-         <li>Back Propagation Algoritham</li>        <li>Architecture of Neural Net</li>
-         <li>Gradient Descent Method</li>
-         <li>Optimization</li>
-          </ol>
-    <li>Validation</li>
-  <ol>
-  <li>Train_Test_Split</li>
-   <li>k-fold</li>
-    <li>Accuracy</li>
-   </ol>
-  <li>Result</li>
- <li>Future Work</li>
+ 
 </ol>
    
  <h2>1. Introduction</h2> 
