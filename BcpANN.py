@@ -14,6 +14,9 @@ from sklearn.preprocessing import MaxAbsScaler
 from tkinter import *
 #object creation
 NN = Neural_network()
+#normalization
+scalerX = MaxAbsScaler()
+scalery = MaxAbsScaler()
 #function for early stop method
 def earlyStop(x_test,y_test,x_train,y_train,gamma=.2):
         y_predict=NN.predict(x_test)
@@ -49,9 +52,7 @@ def trigger():
      #df["creater_depth"]=df["CD(μm)"]
      X_train, X_test, Y_train, Y_test = train_test_split(df.iloc[:59,0:4], 
                         df.iloc[:59,4:6], test_size=0.33, random_state=4)
-     #normalization
-     scalerX = MaxAbsScaler()
-     scalery = MaxAbsScaler()
+
      # fit and transform
      X_train = scalerX.fit_transform(X_train)
      Y_train = scalery.fit_transform(Y_train)
@@ -60,6 +61,8 @@ def trigger():
      #learning of algorithm
      NN.fit(X_train, Y_train)
      epoch=earlyStop(X_test,Y_test,X_train,Y_train,.2)
+     global A
+     A=NN.accuracy(NN.predict(X_test),Y_test)
      print("epoch:",epoch)
 
 
@@ -99,7 +102,6 @@ def mrrpredict():
    test_case = scalerX.transform(test_case)
    
    p_mrr=NN.predict(test_case)
-   A=NN.accuracy(NN.predict(X_test),Y_test)
    accuracy=Label(filewin,text="OVERALL ACCURACY OF ANN MODEL :    "+str(A))
    accuracy.pack()
    msg = Label(filewin, text="MRR PREDICTED  :"+"    "+str(p_mrr[0,0:1]))
