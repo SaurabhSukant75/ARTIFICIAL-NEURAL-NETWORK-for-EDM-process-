@@ -10,10 +10,11 @@ class Neural_network(object):
         #size of i/o
         self.input_size=4
         self.output_size=2
-        self.hiddenlayer_size=30
+        self.hiddenlayer_size=22
         self.no_of_hiddenlayer=1
         #learning rate
         self.gamma=.5
+        self.lamb=.2
         #weight matrix 
         self.W1=np.random.randn(self.input_size,self.hiddenlayer_size)
         self.W2=np.random.randn(self.hiddenlayer_size,self.output_size)
@@ -37,7 +38,8 @@ class Neural_network(object):
 
          self.z2_error = self.o_delta3.dot(self.W2.T) # z2 error: how much our hidden layer weights contributed to output error
          self.z2_delta2 = self.z2_error*self.sigmoidPrime(self.z2) # applying derivative of sigmoid to z2 error
-
+         #self.W1 +=.2*self.W1
+         #self.W2 +=.2*self.W2
          self.W1 +=gamma* X.T.dot(self.z2_delta2) # adjusting first set (input --> hidden) weights
          self.W2 +=gamma*self.z2.T.dot(self.o_delta3) # adjusting second set (hidden --> output) weights 
         
@@ -47,12 +49,14 @@ class Neural_network(object):
     def predict(self,x_test):
         o=self.forward(x_test)
         return o     
-    def fit(self,x_train,y_train,no_of_iteration=1000,gamma=.5):
+    def fit(self,x_train,y_train,no_of_iteration=2000,gamma=.5):
         #for learning of algoritham
-        for i in range(no_of_iteration):
+        for _ in range(no_of_iteration):
             self.train(x_train,y_train,gamma)
     def accuracy(self,y_predict,y_actual):
         return  abs(100-100*np.mean(np.array(abs(y_predict-y_actual))))
+    
+   
     def optimum_parameter(self):
         #developed by naive approach.
         #Rcently i'm working on GENETIC ALGORITHM TO find optimum parameter.
