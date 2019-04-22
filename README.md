@@ -2,7 +2,7 @@
  
  <h2>1. Introduction</h2> 
  
-      <p><b>1.1 About EDM Process</b></p>
+      1.1 About EDM Process
    <p>The present manufacturing environment is characterized by complexity, interdisciplinary
 manufacturing functions and an ever growing demand for new tools and
 techniques to solve difficult problems. </p>
